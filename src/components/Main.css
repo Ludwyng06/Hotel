@@ -1,0 +1,12 @@
+.App-main {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column; /* Apila el título y la frase */
+    align-items: center; /* Centra el contenido */
+    position: absolute;
+    top: 60px;
+    left: 100px;
+    white-space: nowrap; /* Evita saltos de línea inesperados */
+    text-align: center; /* Centra el texto */
+  }
+  

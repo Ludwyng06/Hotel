@@ -1,0 +1,53 @@
+.App-header {
+  background-color: #ffffff;
+  height: 200px;
+  width: 100%; /* Ajustado para que tome todo el ancho de .App */
+  max-width: 1600px; /* Igual que .App */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  font-size: calc(10px + 2vmin);
+  color: rgb(250, 250, 250);
+  gap: 15px;
+  padding-left: 20px;
+  border: 1px solid black;
+}
+
+.App-logo {
+  position: relative;
+  left: 50px;
+  height: 15vmin;
+  pointer-events: none;
+  margin-left: 200px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Alinea el texto a la izquierda */
+  position: relative; /* Agregamos position para que left funcione en los hijos */
+}
+
+.header-text h3 {
+  position: relative;
+  left: -400px; /* Lo mueve más a la derecha */
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  margin: 0; /* Elimina cualquier margen extra */
+}
+
+.header-text h4 {
+  position: relative;
+  left: -400px; /* Lo mueve más a la derecha */
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  margin: 10px 0 0 0; /* Pequeño margen superior */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
